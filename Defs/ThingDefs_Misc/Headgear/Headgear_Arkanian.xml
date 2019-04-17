@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--== Tier 1 ==-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="Helmet1Tier" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>3200</WorkToMake>
+            <Mass>1.4</Mass>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.27</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <costList>
+            <Steel>1</Steel>
+            <Plasteel>4</Plasteel>
+        </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+                <li>IndustrialMilitaryAdvanced</li>
+                <li>Imperial</li>
+                <li>Helmet1Tier</li>
+                <li>Ensign</li>
+            </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+    </ThingDef>
+  
+    <ThingDef ParentName="Helmet1Tier">
+        <defName>Apparel_DarkHelmet1Tier</defName>
+        <label>Dark Helmet 1 Tier</label>
+        <description>Dark Helmet 1 Tier.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/HelmetTier1/TGDarkHelmet1TierDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/HelmetTier1/TGDarkHelmet1Tier</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+  
+    <ThingDef ParentName="Helmet1Tier">
+        <defName>Apparel_LightHelmet1Tier</defName>
+        <label>Light Helmet 1 Tier</label>
+        <description>Light Helmet 1 Tier.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/HelmetTier1/TGLightHelmet1TierDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/HelmetTier1/TGLightHelmet1Tier</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!--== Tier 2 ==-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="Helmet2Tier" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <generateCommonality>2</generateCommonality>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.6</Mass>
+            <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.27</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+            <ToxicSensitivity>-1</ToxicSensitivity>
+		</equippedStatOffsets>
+        <costList>
+            <Plasteel>1</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+                <li>SpacerMilitary</li>
+                <li>Imperial</li>
+                <li>Helmet2Tier</li>
+                <li>Ensign</li>
+                <li>Lieutenant</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="Helmet2Tier">
+        <defName>Apparel_DarkHelmet2Tier</defName>
+        <label>Dark Helmet 2 Tier</label>
+        <description>Dark Helmet 2 Tier.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/HelmetTier2/TGDarkHelmet2TierDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/HelmetTier2/TGDarkHelmet2Tier</wornGraphicPath>
+        </apparel>
+        <costList>
+            <Apparel_DarkHelmet1Tier>1</Apparel_DarkHelmet1Tier>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="Helmet2Tier">
+        <defName>Apparel_LightHelmet2Tier</defName>
+        <label>Light Helmet 2 Tier</label>
+        <description>Light Helmet 2 Tier.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/HelmetTier2/TGLightHelmet2TierDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/HelmetTier2/TGLightHelmet2Tier</wornGraphicPath>
+        </apparel>
+        <costList>
+            <Apparel_LightHelmet1Tier>1</Apparel_LightHelmet1Tier>
+        </costList>
+    </ThingDef>
+
+    <!--== Imperal Uniform Hats ==-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="ImperalUniformHats" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>4</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>1800</WorkToMake>
+            <Mass>0.11</Mass>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+                <li>Imperial</li>
+                <li>ImperalUniformHats</li>
+                <li>Ensign</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+    </ThingDef>
+  
+    <ThingDef ParentName="ImperalUniformHats">
+        <defName>Apparel_TGImperalOfficer</defName>
+        <label>Imperal Officer</label>
+        <description>The Imperal would use outfit to show they were Officers.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalOfficerDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalOfficer</wornGraphicPath>
+			<tags>
+                <li>ImperialOfficer</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+            <NegotiationAbility>0.15</NegotiationAbility>
+        </equippedStatOffsets>
+    </ThingDef>
+  
+    <ThingDef ParentName="ImperalUniformHats">
+        <defName>Apparel_TGImperalLowrankOfficer</defName>
+        <label>Imperal Lowrank Officer</label>
+        <description>They would use this outfit to show they were Imperal Lowrank Officer, Stormtrooper Officers and Security.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalLowrankOfficerDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalLowrankOfficer</wornGraphicPath>
+			<tags>
+                <li>ImperialLowrankOfficer</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <SocialImpact>0.15</SocialImpact>
+            <NegotiationAbility>0.1</NegotiationAbility>
+        </equippedStatOffsets>
+    </ThingDef>
+  
+    <ThingDef ParentName="ImperalUniformHats">
+        <defName>Apparel_TGImperalCrewMember</defName>
+        <label>Imperal CrewMember</label>
+        <description>The Imperal would use this outfit to show they were crewmembers or technicians.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalCrewMemberDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/ImperalUniformHats/TGImperalCrewMember</wornGraphicPath>
+			<tags>
+                <li>ImperialCrewMember</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+			<ConstructionSpeed>0.15</ConstructionSpeed>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <!--== Tusken Mask ==-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="TuskenMask" Abstract="True">
+        <techLevel>Neolithic</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>1</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+			</recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <Mass>.45</Mass>
+            <WorkToMake>4200</WorkToMake>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+        <costStuffCount>10</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>            
+				<li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="TuskenMask">
+        <defName>Apparel_TGTuskenMaleMask</defName>
+        <label>Tusken Male Mask</label>
+        <description>Tusken Male Mask.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/TuskenMask/TGTuskenMaleMaskDisplay</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Item/Equipment/Headgear/TuskenMask/TGTuskenMaleMask</wornGraphicPath>
+            <tags>
+                <li>TuskenMaleMask</li>
+                <li>TuskenMaleOutfit</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+    
+</Defs>

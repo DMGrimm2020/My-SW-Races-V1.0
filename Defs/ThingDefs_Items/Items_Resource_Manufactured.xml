@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============== Belt Buckle ====================-->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>TGImperalBeltBuckle</defName>
+        <label>imperal belt buckel</label>
+        <description>The imperal belt buckle for there uniform.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/TGImperalBeltBuckle</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>75</stackLimit>
+        <statBases>
+            <MaxHitPoints>5</MaxHitPoints>
+            <MarketValue>2</MarketValue>
+            <Mass>0.06</Mass>
+            <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.22</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>1.5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>.5</SharpDamageMultiplier>
+            <BluntDamageMultiplier>.5</BluntDamageMultiplier>
+	    </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <FactionDef>
+	    <defName>Falleenoutlander</defName>
+	    <label>Falleen Outpost</label>
+        <description>Mysterious Falleen Race</description>
+        <pawnSingular>falleen</pawnSingular>
+        <pawnsPlural>falleens</pawnsPlural>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <expandingIconTexture>World/Expanding/FalleenFactionBase</expandingIconTexture>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+	    <backstoryCategories>
+            <li>Humanoid_Backstory</li>
+        </backstoryCategories>
+		<geneticVariance>0.8</geneticVariance>
+        <goodwillDailyGain>0.25</goodwillDailyGain>
+        <goodwillDailyFall>0.25</goodwillDailyFall>
+        <leaderTitle>prime councilor</leaderTitle>
+		<hairTags>
+		    <li>TGfalleenhair</li>
+		</hairTags>
+        <caravanTraderKinds>
+            <li>Caravan_Falleen_BulkGoods</li>
+            <li>Caravan_Falleen_CombatSupplier</li>
+            <li>Caravan_Falleen_PirateMerchant</li>
+            <li>Caravan_Falleen_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Falleen_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Falleen_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>
+            <min>10</min>
+            <max>43</max>
+        </allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard mix -->
+                <kindDef>Combat</kindDef>
+                <options>
+					<Falleen_Villager>5</Falleen_Villager>
+                    <Falleen_Town_Guard>10</Falleen_Town_Guard>
+                    <Falleen_Town_Councilman>10</Falleen_Town_Councilman>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Falleen_Villager>20</Falleen_Villager>
+                    <Falleen_Town_Guard>10</Falleen_Town_Guard>
+                    <Falleen_Town_Councilman>10</Falleen_Town_Councilman>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Falleen_Town_Trader>1</Falleen_Town_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <Falleen_Villager>3</Falleen_Villager>
+                    <Falleen_Town_Guard>10</Falleen_Town_Guard>
+				</guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+				    <Falleen_Villager>10</Falleen_Villager>
+                    <Falleen_Town_Guard>10</Falleen_Town_Guard>
+                    <Falleen_Town_Councilman>10</Falleen_Town_Councilman>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <homeIconPath>World/DefaultFactionBase</homeIconPath>
+    </FactionDef>
+
+</Defs>    

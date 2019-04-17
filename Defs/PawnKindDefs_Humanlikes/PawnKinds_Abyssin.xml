@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Abyssin Base ========================== -->
+
+  <PawnKindDef Name="AbyssinBase" Abstract="True">
+    <race>Alien_Abyssin</race>
+    <defaultFactionType>AbyssinTribe</defaultFactionType>
+	  <backstoryCategories>
+      <li>Humanoid_Backstory</li>
+    </backstoryCategories>
+    <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  	<minGenerationAge>0</minGenerationAge>
+	  <maxGenerationAge>600</maxGenerationAge>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <!-- Slave -->
+
+  <PawnKindDef ParentName="AbyssinBase">
+    <defName>Abyssin_Slave</defName>
+    <label>slave</label>
+    <combatPower>30</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>0.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>0</min>
+      <max>350</max>
+    </apparelMoney>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <invNutrition>1</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+
+  <!-- Poverty tier - penitent -->
+
+  <PawnKindDef ParentName="AbyssinBase">
+    <defName>Abyssin_Penitent</defName>
+    <label>penitent</label>
+    <combatPower>35</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>50</min>
+      <max>100</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>90</min>
+      <max>150</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+  </PawnKindDef>
+
+  <!-- Low tier - archer -->
+
+  <PawnKindDef ParentName="AbyssinBase">
+		<defName>Abyssin_Archer</defName>
+		<label>archer</label>
+    <combatPower>48</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>180</min>
+      <max>350</max>
+    </apparelMoney>
+    <weaponMoney>
+			<min>80</min>
+			<max>80</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.03</techHediffsChance>
+  	<minGenerationAge>31</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+	</PawnKindDef>
+
+  <!-- Mid tier - warrior, hunter, trader -->
+  
+  <PawnKindDef ParentName="AbyssinBase">
+    <defName>Abyssin_Warrior</defName>
+    <label>warrior</label>
+    <combatPower>60</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>300</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>150</min>
+      <max>150</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+  	<minGenerationAge>31</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AbyssinBase" Name="Abyssin_Hunter">
+    <defName>Abyssin_Hunter</defName>
+    <label>hunter</label>
+    <combatPower>65</combatPower>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>300</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>100</min>
+      <max>100</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+  	<minGenerationAge>31</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="Abyssin_Hunter">
+    <defName>Abyssin_Trader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+    <apparelRequired Inherit="False">
+      <li>Apparel_TribalHeaddress</li>
+    </apparelRequired>
+  	<minGenerationAge>66</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+  </PawnKindDef>
+
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="AbyssinBase">
+    <defName>Abyssin_Berserker</defName>
+    <label>berserker</label>
+    <combatPower>90</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>
+      <min>200</min>
+      <max>550</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>300</min>
+      <max>300</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  	<minGenerationAge>31</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AbyssinBase">
+    <defName>Abyssin_HeavyArcher</defName>
+    <label>heavy archer</label>
+    <combatPower>90</combatPower>
+    <apparelMoney>
+      <min>200</min>
+      <max>550</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>250</min>
+      <max>250</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  	<minGenerationAge>31</minGenerationAge>
+	  <maxGenerationAge>151</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AbyssinBase" Name="AbyssinChiefBase" Abstract="True">
+    <defName>Abyssin_ChiefMelee</defName>
+    <combatPower>130</combatPower>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>
+      <min>450</min>
+      <max>750</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_TribalHeaddress</li>
+      <li>Apparel_PlateArmor</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+  	<minGenerationAge>221</minGenerationAge>
+	  <maxGenerationAge>600</maxGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AbyssinChiefBase">
+    <defName>Abyssin_ChiefMelee</defName>
+    <label>berserker chief</label>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+	<PawnKindDef ParentName="AbyssinChiefBase">
+		<defName>Abyssin_ChiefRanged</defName>
+		<label>archer chief</label>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Falleen</defName>
+        <label>falleen leather</label>
+        <description>Tanned, dried, scraped falleen skin.</description>
+        <graphicData>
+            <color>(148,244,148)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>4.2</MarketValue>
+            <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>43</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(148,244,148)</color>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>

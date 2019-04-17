@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="CookMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Alien_Abyssin</li>
+				<li>Alien_Arkanian</li>
+				<li>Alien_Chiss</li>
+				<li>Alien_Falleen</li>
+				<li>Alien_Omwati</li>
+				<li>Alien_Pantoran</li>
+				<li>Alien_Togruta</li>
+				<li>Alien_Trandoshan</li>
+				<li>Alien_Wookiee</li>
+				<li>Alien_Wroonia</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase" Name="RationPack">
+    	<defName>CookTGRationPack</defName>
+    	<label>cook ration pack</label>
+    	<description>Prepare a packaged ration pack from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    	<jobString>Cooking ration pack.</jobString>
+    	<workSpeedStat>CookSpeed</workSpeedStat>
+    	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    	<effectWorking>Cook</effectWorking>
+    	<soundWorking>Recipe_CookMeal</soundWorking>
+    	<allowMixingIngredients>true</allowMixingIngredients>
+    	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    	<ingredients>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>MeatRaw</li>
+            			<li>AnimalProductRaw</li>
+          			</categories>
+        		</filter>
+        		<count>0.3</count>
+      		</li>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>PlantFoodRaw</li>
+          			</categories>
+        		</filter>
+        		<count>0.3</count>
+      		</li>
+    	</ingredients>
+		<products>
+			<TGRationPack>1</TGRationPack>
+		</products>
+  		<skillRequirements>
+			<Cooking>8</Cooking>
+    	</skillRequirements>
+    	<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+  	</RecipeDef>
+
+	<RecipeDef ParentName="RationPack">
+    	<defName>CookTG5RationPack</defName>
+    	<label>cook 5 ration pack</label>
+    	<description>Prepare 5 packaged ration pack from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    	<jobString>Cooking 5 ration pack.</jobString>
+    	<ingredients>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>MeatRaw</li>
+            			<li>AnimalProductRaw</li>
+          			</categories>
+        		</filter>
+        		<count>1.5</count>
+      		</li>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>PlantFoodRaw</li>
+          			</categories>
+        		</filter>
+        		<count>1.5</count>
+      		</li>
+    	</ingredients>
+		<products>
+			<TGRationPack>5</TGRationPack>
+		</products>
+  	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase" Name="EnergyCapsule">
+    	<defName>CookTGEnergyCapsule</defName>
+    	<label>cook energy capsule</label>
+    	<description>Prepare a energy capsule from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    	<jobString>Cooking energy capsule.</jobString>
+    	<workSpeedStat>CookSpeed</workSpeedStat>
+    	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    	<effectWorking>Cook</effectWorking>
+    	<soundWorking>Recipe_CookMeal</soundWorking>
+    	<allowMixingIngredients>true</allowMixingIngredients>
+    	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    	<ingredients>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>MeatRaw</li>
+            			<li>AnimalProductRaw</li>
+          			</categories>
+        		</filter>
+        		<count>0.25</count>
+      		</li>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>PlantFoodRaw</li>
+          			</categories>
+        		</filter>
+        		<count>0.25</count>
+      		</li>
+    	</ingredients>
+		<products>
+			<TGEnergyCapsule>1</TGEnergyCapsule>
+		</products>
+  		<skillRequirements>
+			<Cooking>8</Cooking>
+    	</skillRequirements>
+    	<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+  	</RecipeDef>
+
+	<RecipeDef ParentName="EnergyCapsule">
+    	<defName>CookTG5EnergyCapsule</defName>
+    	<label>cook 5 energy capsule</label>
+    	<description>Prepare 5 energy capsule from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    	<jobString>Cooking 5 energy capsule.</jobString>
+    	<ingredients>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>MeatRaw</li>
+            			<li>AnimalProductRaw</li>
+          			</categories>
+        		</filter>
+        		<count>1.25</count>
+      		</li>
+      		<li>
+        		<filter>
+          			<categories>
+            			<li>PlantFoodRaw</li>
+          			</categories>
+        		</filter>
+        		<count>1.25</count>
+      		</li>
+    	</ingredients>
+		<products>
+			<TGEnergyCapsule>5</TGEnergyCapsule>
+		</products>
+  	</RecipeDef>
+ 
+</Defs>   

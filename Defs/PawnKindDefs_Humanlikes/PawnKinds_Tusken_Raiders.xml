@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- ============================ Tusken_Raiders Base ========================== -->
+
+  <PawnKindDef Name="Tusken_RaidersBase" Abstract="True">
+    <race>Alien_Tusken_Raiders</race>
+    <defaultFactionType>Tusken_RaidersRaiders</defaultFactionType>
+	  <backstoryCategories>
+      <li>Humanoid_Backstory</li>
+    </backstoryCategories>
+    <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+    <chemicalAddictionChance>0.12</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+  	<minGenerationAge>9</minGenerationAge>
+	  <maxGenerationAge>120</maxGenerationAge>
+  </PawnKindDef>
+
+  <!-- Slave -->
+
+  <PawnKindDef ParentName="Tusken_RaidersBase">
+    <defName>Tusken_Raiders_Slave</defName>
+    <label>slave</label>
+    <combatPower>30</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>0.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>0</min>
+      <max>350</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>TuskenMaleMask</li>
+    </apparelTags>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <invNutrition>1</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+
+  <!-- Povery tier - drifter -->
+  
+  <PawnKindDef ParentName="Tusken_RaidersBase">
+    <defName>Tusken_Raiders_Drifter</defName>
+    <label>drifter</label>
+    <combatPower>35</combatPower>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>0.6</max>
+    </gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>
+      <min>90</min>
+      <max>280</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>TuskenMaleMask</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>60</min>
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>MedievalMeleeBasic</li>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>30</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  	<minGenerationAge>9</minGenerationAge>
+	  <maxGenerationAge>120</maxGenerationAge>
+  </PawnKindDef>
+
+  <!-- Low tier - scavenger, thrasher -->
+
+  <PawnKindDef ParentName="Tusken_RaidersBase" Name="Tusken_RaidersScavTierBase" Abstract="True">
+    <combatPower>45</combatPower>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <itemQuality>Poor</itemQuality>
+    <apparelTags>
+      <li>TuskenMaleMask</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <gearHealthRange>
+      <min>0.4</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>50</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  	<minGenerationAge>9</minGenerationAge>
+	  <maxGenerationAge>120</maxGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="Tusken_RaidersScavTierBase">
+    <defName>Tusken_Raiders_Scavenger</defName>
+    <label>scavenger gunner</label>
+    <apparelMoney>
+      <min>300</min>
+      <max>500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>200</min>
+      <max>300</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Tusken_RaidersScavTierBase">
+    <defName>Tusken_Raiders_Thrasher</defName>
+    <label>scavenger thrasher</label>
+    <race>Human</race>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>
+      <min>300</min>
+      <max>800</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Outlander</li>
+		</apparelTags>
+    <weaponMoney>
+      <min>100</min>
+      <max>160</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Mid tier - Tusken_Raiders -->
+
+  <PawnKindDef ParentName="Tusken_RaidersBase">
+    <defName>Tusken_Raiders_Pirate</defName>
+    <label>pirate gunner</label>
+    <race>Human</race>
+    <combatPower>65</combatPower>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>400</min>
+      <max>1000</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>TuskenMaleMask</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>250</min>
+      <max>345</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>40</min>
+            <max>80</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  	<minGenerationAge>75</minGenerationAge>
+	  <maxGenerationAge>120</maxGenerationAge>
+  </PawnKindDef>
+
+</Defs>

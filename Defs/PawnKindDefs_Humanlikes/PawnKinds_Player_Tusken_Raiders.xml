@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseTusken_RaidersPawnKind">
+    <race>Alien_Tusken_Raiders</race>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  	<minGenerationAge>9</minGenerationAge>
+	  <maxGenerationAge>75</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseTusken_RaidersPawnKind">
+    <defName>Tusken_Raiders</defName>
+    <label>pirate</label>
+    <defaultFactionType>Tusken_RaidersPlayerRaiders</defaultFactionType>
+	  <backstoryCategories>
+      <li>Humanoid_Backstory</li>
+    </backstoryCategories>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelTags>
+      <li>TuskenMaleMask</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>600</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+  </PawnKindDef>
+
+</Defs>

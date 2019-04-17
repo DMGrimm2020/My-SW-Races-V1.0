@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Chiss</defName>
+        <label>chiss leather</label>
+        <description>Tanned, dried, scraped chiss skin.</description>
+        <graphicData>
+            <color>(51,51,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>4.2</MarketValue>
+            <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(51,51,255)</color>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>

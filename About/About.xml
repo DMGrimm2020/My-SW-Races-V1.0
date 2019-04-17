@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>SW Stuff</name>
+	<author>TGrimm92</author>
+  	<supportedVersions>
+    	<li>1.0</li>
+  	</supportedVersions>
+	<url>https://github.com/tgrimabc</url>
+	<description>
+	This mod has 10 star wars races, clothes, weapons, new hair styles, and new food.
+
+	Add Ons
+	-10 Races
+	-Weapons
+	-Hair
+	-Clothes
+	-Meals
+	-Plant
+
+	Dependencies
+	This mod depends on the alien race framework by Erdelf. You can view its original post here https://steamcommunity.com/workshop/filedetails/?id=839005762, but at the time of the writing of this post the release is on beta 18 while 1.0 is required. You can obtain 1.0 on their github https://github.com/erdelf/AlienRaces/releases. Until Erdelf updates versioning the 1.0 does work just ignore the fact that it is red in the mod list.
+
+	Source
+	https://github.com/tgrimabc?tab=repositories
+
+	Discord
+	https://discord.gg/ZBFxJHe
+
+	Patreon
+	https://www.patreon.com/user?u=13220445
+	
+	Credit:
+		Art:
+			Shotgunfrezy "Razz"
+			Antharann FireBlade "AR"
+			UnnamedEnder "UE"
+			
+		Ideas:
+			Jamhana_finley8426
+			Lucky_d20
+			Roskii
+			Survivalmaster
+			Guy
+			Beasstmann
+
+				Thank you for helping me get this are.
+			</description>
+	
+</ModMetaData>

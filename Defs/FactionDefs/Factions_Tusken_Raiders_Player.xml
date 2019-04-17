@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<FactionDef>
+        <defName>Tusken_RaidersPlayerRaiders</defName>
+		<label>Tusken Raiders Clan</label>
+		<description>Tusken_Raiders Tribal Start.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>raider</pawnSingular>
+		<pawnsPlural>raiders</pawnsPlural>
+		<basicMemberKind>Tusken_Raiders</basicMemberKind>
+        <techLevel>Spacer</techLevel>
+	    <backstoryCategories>
+            <li>Humanoid_Backstory</li>
+        </backstoryCategories>
+		<homeIconPath>World/DefaultFactionBase</homeIconPath>
+    	<expandingIconTexture>World/Expanding/Tusken_RaidersFactionBase</expandingIconTexture>
+		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionTribal</factionNameMaker>
+        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+        <forageabilityFactor>1.7</forageabilityFactor>
+        <startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+        <hairTags>
+			<li>Punk</li>
+			<li>Tribal</li>
+		</hairTags>
+        <apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+    	<recipePrerequisiteTags>
+      		<li>Tribal</li>
+    	</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

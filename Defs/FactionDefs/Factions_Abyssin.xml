@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <FactionDef>
+	    <defName>AbyssinTribe</defName>
+	    <label>Abyssin Clan</label>
+        <description>Mysterious Abyssin Race</description>
+        <pawnSingular>abyssin</pawnSingular>
+        <pawnsPlural>abyssins</pawnsPlural>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <expandingIconTexture>World/Expanding/EmpireFactionBase</expandingIconTexture>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+		<techLevel>Neolithic</techLevel>
+	    <backstoryCategories>
+            <li>Humanoid_Backstory</li>
+        </backstoryCategories>
+		<geneticVariance>0.1</geneticVariance>
+        <goodwillDailyGain>0.25</goodwillDailyGain>
+        <goodwillDailyFall>0.25</goodwillDailyFall>
+        <leaderTitle>chief</leaderTitle>
+		<hairTags>
+			<li>TGabyssinhair</li>
+		</hairTags>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(1000, 1)</li>
+                <li>(4000, 0.8)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>    
+        <caravanTraderKinds>
+            <li>Caravan_Abyssin_BulkGoods</li>
+            <li>Caravan_Abyssin_WarMerchant</li>
+            <li>Caravan_Abyssin_Slaver</li>
+            <li>Caravan_Abyssin_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Abyssin_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Abyssin_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>
+            <min>30</min>
+            <max>100</max>
+        </allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <Abyssin_Penitent>5</Abyssin_Penitent>
+                    <Abyssin_Warrior>5</Abyssin_Warrior>
+                    <Abyssin_Archer>10</Abyssin_Archer>
+                    <Abyssin_Hunter>10</Abyssin_Hunter>
+                    <Abyssin_HeavyArcher>10</Abyssin_HeavyArcher>
+                    <Abyssin_Berserker>5</Abyssin_Berserker>
+                    <Abyssin_ChiefRanged>3</Abyssin_ChiefRanged>
+                    <Abyssin_ChiefMelee>1.5</Abyssin_ChiefMelee>
+                </options>  
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Abyssin_Archer>10</Abyssin_Archer>
+                    <Abyssin_Hunter>10</Abyssin_Hunter>
+                    <Abyssin_HeavyArcher>10</Abyssin_HeavyArcher>
+                    <Abyssin_ChiefRanged>5</Abyssin_ChiefRanged>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Abyssin_Penitent>10</Abyssin_Penitent>
+                    <Abyssin_Warrior>10</Abyssin_Warrior>
+                    <Abyssin_Berserker>10</Abyssin_Berserker>
+                    <Abyssin_ChiefMelee>5</Abyssin_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Abyssin_Warrior>20</Abyssin_Warrior>
+                    <Abyssin_Archer>10</Abyssin_Archer>
+                    <Abyssin_Hunter>10</Abyssin_Hunter>
+                    <Abyssin_HeavyArcher>10</Abyssin_HeavyArcher>
+                    <Abyssin_Berserker>5</Abyssin_Berserker>
+                    <Abyssin_ChiefRanged>3</Abyssin_ChiefRanged>
+                    <Abyssin_ChiefMelee>1.5</Abyssin_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Abyssin_Trader>1</Abyssin_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <Abyssin_Warrior>7</Abyssin_Warrior>
+                    <Abyssin_Archer>10</Abyssin_Archer>
+                    <Abyssin_Hunter>10</Abyssin_Hunter>
+                    <Abyssin_HeavyArcher>10</Abyssin_HeavyArcher>
+                    <Abyssin_Berserker>7</Abyssin_Berserker>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <Abyssin_Warrior>7</Abyssin_Warrior>
+                    <Abyssin_Archer>10</Abyssin_Archer>
+                    <Abyssin_Hunter>10</Abyssin_Hunter>
+                    <Abyssin_HeavyArcher>10</Abyssin_HeavyArcher>
+                    <Abyssin_Berserker>7</Abyssin_Berserker>
+                    <Abyssin_ChiefRanged>10</Abyssin_ChiefRanged>
+                </options>
+            </li>
+        </pawnGroupMakers> 
+        <homeIconPath>World/TribalFactionBase</homeIconPath>
+    </FactionDef>
+
+</Defs>

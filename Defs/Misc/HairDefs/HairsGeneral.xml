@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <HairDef>
+        <defName>Shaved</defName>
+        <label>shaved</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Abyssin/Hairs/Shaved</texPath>
+		    <hairTags>
+			    <li>TGabyssinhair</li>
+		    </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairBun</defName>
+        <label>Hair Bun</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Falleen/Hairs/TGHairBun</texPath>
+		<hairTags>
+		    <li>TGfalleenhair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairBraided</defName>
+        <label>Hair Braided</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Falleen/Hairs/TGHairBraided</texPath>
+		<hairTags>
+		    <li>TGfalleenhair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairTiedUp</defName>
+        <label>Hair TiedUp</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Falleen/Hairs/TGHairTiedUp</texPath>
+		<hairTags>
+		    <li>TGfalleenhair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairFeatherF</defName>
+        <label>F Feather Hair</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Omwati/Hairs/TGHairFeatherF</texPath>
+		<hairTags>
+		    <li>TGomwatihair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairFeatherM</defName>
+        <label>M Feather Hair</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Omwati/Hairs/TGHairFeatherM</texPath>
+		<hairTags>
+		    <li>TGomwatihair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>ARPantoranPrincess</defName>
+        <label>PPrincess hair</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pantoran/Hairs/ARPantoranPrincess</texPath>
+		<hairTags>
+		    <li>TGpantoranhair</li>
+            <li>TGpantoranprincess</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>HalnoHairBun</defName>
+        <label>Hair Bun</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pantoran/Hairs/HalnoHairBun</texPath>
+		<hairTags>
+		    <li>TGpantoranhair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TG3HeadTailsF</defName>
+        <label>Female Head Tails</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Togruta/Hairs/TG3HeadTailsF</texPath>
+		<hairTags>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TG3HeadTailsM</defName>
+        <label>Male Head Tails</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Togruta/Hairs/TG3HeadTailsM</texPath>
+		<hairTags>
+		    <li>TGtogrutahair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>HalnoHairBun</defName>
+        <label>Hair Bun</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Wroonia/Hairs/HalnoHairBun</texPath>
+		<hairTags>
+		    <li>TGwrooniahair</li>
+		</hairTags>
+    </HairDef>
+
+</Defs>

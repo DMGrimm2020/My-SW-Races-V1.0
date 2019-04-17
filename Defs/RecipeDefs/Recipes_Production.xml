@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============== Belt Buckel ====================-->
+
+    <RecipeDef>
+        <defName>Make_ImperalBeltBuckle</defName>
+        <label>make 25 imperal belt buckle</label>
+        <description>Make 25 imperal belt buckle.</description>
+        <jobString>Making 25 imperal belt buckle.</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TGImperalBeltBuckle>8</TGImperalBeltBuckle>
+        </products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+		</skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+</Defs>
